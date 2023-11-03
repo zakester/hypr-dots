@@ -11,7 +11,7 @@ return {
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
 
-	color_scheme = 'Catppuccin Mocha',
+	color_scheme = "tokyonight_moon", --'Catppuccin Mocha',
 
 	-- Font config
 	font = font_with_fallback(font_name),
@@ -108,11 +108,11 @@ return {
 			mods = "CTRL",
 			action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }),
 		},
-		{
-			key = "w",
-			mods = "CTRL",
-			action = wezterm.action({ CloseCurrentTab = { confirm = false } }),
-		},
+		--{
+			--key = "w",
+			--mods = "CTRL",
+			--action = wezterm.action({ CloseCurrentTab = { confirm = false } }),
+		--},
 		{
 			key = "Tab",
 			mods = "CTRL",
