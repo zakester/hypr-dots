@@ -2,7 +2,8 @@
 ## Aliases
 ##
 
-alias tmux-session="tmux new -s"
+alias record='wf-recorder -g "$(slurp)" -f ~/Videos/records/$(date "+%Y%m%d%H%M%S").mkv'
+alias ts="tmux new -s"
 alias wifi="nmcli device connect wlp4s0"
 alias wifi-on="nmcli radio wifi on"
 alias wifi-off="nmcli radio wifi off"
