@@ -1,150 +1,173 @@
 {
-    "layer": "top",
-    "position": "top",
-    "mod": "dock",
-    "exclusive": true,
-    "passtrough": false,
-    "gtk-layer-shell": true,
-    "height": 0,
-    "modules-left": [
-        "clock",
-        "custom/language",
-        // "cpu",
-        "custom/weather",
-        "wlr/workspaces"
-        //"network"
-        //"mpris"
-    ],
-    "modules-center": [
-      "hyprland/window"
-    ],
-    "modules-right": [
-        "tray",
-        "temperature",
-        "memory",
-        "pulseaudio",
-        "pulseaudio#microphone"
-    ],
-    
-    "hyprland/window": {
-        "format": "{}",
-        "max-length": 50
-    },
-    "wlr/workspaces": {
-        "on-scroll-up": "hyprctl dispatch workspace e+1",
-        "on-scroll-down": "hyprctl dispatch workspace e-1",
-        "all-outputs": true,
-        "on-click": "activate",
-        "format": "{icon}",
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "urgent": "",
-            "active": "",
-            "default": ""
+  "layer": "top",
+  "position": "top",
+  "modules-left": [
+    "custom/launcher",
+    "hyprland/workspaces",
+    "temperature",
+    //"idle_inhibitor",
+    //"custom/wall",
+    //"mpd",
+    "custom/icon",
+    "custom/playerlabel",
+    "custom/cava-internal",
+  ],
+        "modules-center": [
+          "clock"
+        ],
+        "modules-right": [
+          "pulseaudio#microphone",
+          "pulseaudio",
+          "backlight",
+          "memory",
+          "cpu",
+          "network",
+          //"battery",
+          "custom/powermenu",
+          "tray"
+        ],
+        "custom/launcher" : {
+          "format" : " ",
+          "on-click" : "pkill rofi || ~/.config/rofi/launcher.sh",
+          "tooltip" : false
+        },
+        "custom/icon": {
+          "format" : " 󰠖 "
+        },
+        "custom/wall" : {
+          "on-click" : "killall swaybg && swaybg --output HDMI-A-1 --image $(find ~/.wallpaper/ -type f | shuf --random-source=/dev/urandom -n 1)",
+          "on-click-middle" : "default_wall",
+          "on-click-right" : "killall dynamic_wallpaper || dynamic_wallpaper &",
+          "format" : " 󰠖 ",
+          "tooltip" : false
+        },
+        "custom/cava-internal" : {
+          "exec": "sleep 1s && cava -p ~/.config/cava/waybar_config | sed -u 's/;//g;s/0/▁/g;s/1/▂/g;s/2/▃/g;s/3/▄/g;s/4/▅/g;s/5/▆/g;s/6/▇/g;s/7/█/g;'"
+        },
+        "custom/playerlabel": {
+          "format": "<span>{}</span>",
+          "return-type": "json",
+          "max-length": 48,
+          "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(artist)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+          "on-click-middle": "playerctl play-pause",
+          "on-click": "playerctl previous",
+          "on-click-right": "playerctl next",
+          "format-icons": {
+            "Playing": "<span foreground='#FFF'>󰒮 󰐌 󰒭</span>",
+            "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭</span>"
           }
-    },
-    // "cpu": {
-    //     "interval": 10,
-    //     "format": " {}%",
-    //     "max-length": 10,
-    //     "on-click": ""
-    // },
-    "mpris": {
-      "format": "{player_icon} {artist}",
-      "format-paused": "{status_icon} {artist}",
-	    "player-icons": {
-        "default": "♬",
-        "mpv": "🎵"
-      },
-      "status-icons": {
-        "paused": "▶"
-      },
-	// "ignored-players": ["firefox"]
-    },
-     "memory": {
-         "interval": 30,
-         "format": " {}%",
-         "format-alt":" {used:0.1f}G",
-         "max-length": 10
-     },
-    "network": {
-	"interface": "wlp4s0",
-	"format": "{ifname}",
-	"format-wifi": "{essid} ({signalStrength}%) ",
-	"format-ethernet": "{ifname} ",
-	"format-disconnected": "", //An empty format will hide the module.
-	"format-disconnected": "",
-	"tooltip-format": "{ifname}",
-	"tooltip-format-wifi": "{essid} ({signalStrength}%) ",
-	"tooltip-format-ethernet": "{ifname} ",
-	"tooltip-format-disconnected": "Disconnected",
-	"max-length": 50
-},
-    "custom/updates": {
-        "exec": "(paru -Qua) | wc -l",
-        "interval": 7200,
-        "format": " {}"
-    },
-    "temperature": {
-	// "thermal-zone": 2,
-	// "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-	// "critical-threshold": 80,
-	// "format-critical": "{temperatureC}°C ",
-	"format": "{temperatureC}°C "
-    },
-    "custom/language": {
-       "on-click": "/home/zakester/.config/waybar/scripts/kb_layout_next.sh",
-       "exec": "cat /home/zakester/.config/waybar/kb_layout",
-       "interval": 2,
-       "format": " {}",
-       "tooltip": false
-    },
-    "custom/weather" : {
-        "tooltip" : true,
-        "format" : "{}",
-        "restart-interval" : 300,
-        "exec" : "~/.config/waybar/scripts/waybar-wttr.py",
-        "return-type" : "json"
-    },
-    "tray": {
-        "icon-size": 13,
-        "tooltip": false,
-        "spacing": 10
-    },
-    "clock": {
-        "format": "{: %R   %d/%m}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-    },
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "tooltip": false,
-        "format-muted": " Muted",
-        "on-click": "pamixer -t",
-        "on-scroll-up": "amixer -q sset Master 5%+",
-        "on-scroll-down": "amixer -q sset Master 5%-",
-        "scroll-step": 5,
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
+        },
+        "hyprland/workspaces" : {
+          "format" : "{icon}",
+          "on-click" : "activate",
+          "on-scroll-up" : "hyprctl dispatch workspace e+1",
+          "on-scroll-down" : "hyprctl dispatch workspace e-1"
+        },
+        "idle_inhibitor" : {
+          "format" : "{icon}",
+          "format-icons" : {
+            "activated" : "",
+            "deactivated" : ""
+          },
+          "tooltip" : false
+        },
+        "backlight" : {
+          "device" : "intel_backlight",
+          "on-scroll-up" : "light -A 5",
+          "on-scroll-down" : "light -U 5",
+          "format" : "{icon} {percent}%",
+          "format-icons" : [ "󰃝", "󰃞", "󰃟", "󰃠" ]
+        },
+        "pulseaudio" : {
+          "scroll-step" : 1,
+          "format" : "{icon} {volume}%",
+          "format-muted" : "󰖁 Muted",
+          "format-icons" : {
+            "default" : [ "", "", "" ]
+          },
+          "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+          "tooltip" : false
+        },
+
+        "pulseaudio#microphone": {
+            "format": "{format_source}",
+            "tooltip": false,
+            "format-source": "󰍬 {volume}%",
+            "format-source-muted": "󰍭 Muted",
+            "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+            "on-scroll-up": "pactl set-source-volume @DEFAULT_SOURCE@ +5%",
+            "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%",
+            "scroll-step": 1
+        },
+
+        "battery" : {
+          "interval" : 10,
+          "states" : {
+            "warning" : 20,
+            "critical" : 10
+          },
+          "format" : "{icon} {capacity}%",
+          "format-icons" : [ "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
+          "format-full" : "{icon} {capacity}%",
+          "format-charging" : "󰂄 {capacity}%",
+          "tooltip" : false
+        },
+        "clock" : {
+          "interval" : 1,
+          "format" : "{:%I:%M %p  %A %b %d}",
+          "tooltip" : true,
+          "tooltip-format" : "<tt>{calendar}</tt>"
+        },
+        "memory" : {
+          "interval" : 1,
+          "format" : "󰍛 {percentage}%",
+          "states" : {
+            "warning" : 85
+          }
+        },
+        "cpu" : {
+          "interval" : 1,
+          "format" : "󰻠 {usage}%"
+        },
+        "mpd" : {
+          "max-length" : 25,
+          "format" : "<span foreground='#bb9af7'></span> {title}",
+          "format-paused" : " {title}",
+          "format-stopped" : "<span foreground='#bb9af7'></span>",
+          "format-disconnected" : "",
+          "on-click" : "mpc --quiet toggle",
+          "on-click-right" : "mpc update, mpc ls | mpc add",
+          "on-click-middle" : "kitty --class='ncmpcpp' ncmpcpp ",
+          "on-scroll-up" : "mpc --quiet prev",
+          "on-scroll-down" : "mpc --quiet next",
+          "smooth-scrolling-threshold" : 5,
+          "tooltip-format" : "{title} - {artist} ({elapsedTime:%M:%S}/{totalTime:%H:%M:%S})"
+        },
+        "network" : {
+          "format-disconnected" : "󰯡 Disconnected",
+          "format-ethernet" : "󰀂 {ifname} ({ipaddr})",
+          "format-linked" : "󰖪 {essid} (No IP)",
+          "format-wifi" : "󰖩 {essid}",
+          "on-click": "nmcli device connect wlan0",
+          "interval" : 1,
+          "tooltip-format" : "{bandwidthDownBytes}"
+        },
+        "temperature" : {
+          // "hwmon-path": "${env:HWMON_PATH}",
+          //"critical-threshold": 80,
+          "tooltip" : false,
+          "format" : " {temperatureC}°C"
+        },
+        "custom/powermenu" : {
+          "format" : "",
+          "on-click" : "pkill rofi || ~/.config/rofi/powermenu.sh",
+          "tooltip" : false
+        },
+        "tray" : {
+          "icon-size" : 15,
+          "spacing" : 5
         }
-    },
-    "pulseaudio#microphone": {
-        "format": "{format_source}",
-        "tooltip": false,
-        "format-source": " {volume}%",
-        "format-source-muted": " Muted",
-        "on-click": "pamixer --default-source -t",
-        "on-scroll-up": "amixer set Capture 5%+",
-        "on-scroll-down": "amixer set Capture 5%-",
-        "scroll-step": 5
+      }
     }
+  }
 }

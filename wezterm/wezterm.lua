@@ -29,7 +29,7 @@ return {
 			font = font_with_fallback(font_name, { bold = true }),
 		},
 	},
-  allow_square_glyphs_to_overflow_width="Always",
+	allow_square_glyphs_to_overflow_width = "Always",
 	warn_about_missing_glyphs = false,
 	font_size = 12,
 	line_height = 1.0,
@@ -109,9 +109,9 @@ return {
 			action = wezterm.action({ SpawnTab = "CurrentPaneDomain" }),
 		},
 		--{
-			--key = "w",
-			--mods = "CTRL",
-			--action = wezterm.action({ CloseCurrentTab = { confirm = false } }),
+		--key = "w",
+		--mods = "CTRL",
+		--action = wezterm.action({ CloseCurrentTab = { confirm = false } }),
 		--},
 		{
 			key = "Tab",
@@ -161,5 +161,5 @@ return {
 	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
 	window_background_opacity = 1.0,
 	window_close_confirmation = "NeverPrompt",
-  window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) },
+	window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) },
 }

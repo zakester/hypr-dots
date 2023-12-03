@@ -1,0 +1,60 @@
+<application>
+  <component name="DynamicPluginEnabler">
+    <trackers>
+      <map>
+        <entry key="2Z1hIeMet5HcJK01TWdZo1Blltg">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="JdkInstallerHistory">
+    <option name="installedItems">
+      <installed-jdk>
+        <option name="fullText" value="Azul Zulu Community™ 17.0.9" />
+        <option name="installDir" value="$USER_HOME$/.jdks/azul-17.0.9" />
+        <option name="javaHomeDir" value="$USER_HOME$/.jdks/azul-17.0.9" />
+        <option name="sha256" value="5317630424ee4e4d2c1024240d2e6f94a7c06d17b01dd36859df4a4d679fc287" />
+        <option name="url" value="https://cdn.azul.com/zulu/bin/zulu17.46.19-ca-jdk17.0.9-linux_x64.tar.gz" />
+        <option name="versionText" value="17.0.9" />
+      </installed-jdk>
+    </option>
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "CWM_LOGGING_VERSION": "1",
+    "NextRunPlatformUpdateBuild": "IC-232.10227.8/2023.2.5",
+    "NextRunPlatformUpdateVersion": "2023.2.5",
+    "NonModalCommitCustomization.IsApplied": "true",
+    "RunOnceActivity.se.text.search": "true",
+    "appcds.runOnSecondStart": "IC-221.6008.13-0a0f4dc650d5ee93359e7d30078da37d1797da47e8dc1364335ab5e37eb418cc",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "bundled.plugins.list.saved.version": "IC-221.6008.13",
+    "defaultJdkConfigured": "true",
+    "defaultpackageserviceconfig.fulltext": "https://package-search.services.jetbrains.com/api/search/idea/fulltext",
+    "defaultpackageserviceconfig.suggest": "https://package-search.services.jetbrains.com/api/search/idea/suggest",
+    "defaultpackageserviceconfig.updated.ts": "1701595439870",
+    "eclipse.projects.detected": "",
+    "file.gist.reindex.count": "2",
+    "fileTypeChangedCounter": "1",
+    "gotit.previous.run": "IC-221.6008.13",
+    "ide.memory.adjusted": "true",
+    "ide.updates.whats.new.shown.for": "221",
+    "input.method.disabler.muted": "true",
+    "installed.kotlin.plugin.version": "221-1.6.21-release-337-IJ6008.13",
+    "registry.to.advanced.settings.migration.build": "IC-221.6008.13",
+    "tasks.pass.word.conversion.enforced": "true"
+  },
+  "keyToStringList": {
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector",
+      "com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ]
+  }
+}]]></component>
+</application>

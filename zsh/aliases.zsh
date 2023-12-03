@@ -4,11 +4,11 @@
 
 alias record='wf-recorder -g "$(slurp)" -f ~/Videos/records/$(date "+%Y%m%d%H%M%S").mkv'
 alias ts="tmux new -s"
-alias wifi="nmcli device connect wlp4s0"
+alias wifi="nmcli device connect wlan0"
 alias wifi-on="nmcli radio wifi on"
 alias wifi-off="nmcli radio wifi off"
 alias rwifi="wifi-on | wifi-off"
-alias dsearch="dnf search"
+#alias dsearch="dnf search"
 alias xmp="~/run.sh"
 alias start-wallpaper="~/.config/hypr/start_wallpaper.sh"
 alias random-wallpaper="swww img $(find ~/.wallpaper/ -type f | shuf --random-source=/dev/urandom -n 1)"
