@@ -1,0 +1,10 @@
+[window]
+padding = {x=5,y=10}
+
+[font]
+size = 12
+
+[colors]
+[colors.primary]
+background = "#232634"
+foreground = "#F2D5CF"

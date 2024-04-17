@@ -1,0 +1,7 @@
+[options]
+background = 282828
+fullscreen = false
+
+[binds]
+<Ctrl+k> = zoom  5
+<Ctrl+j> = zoom -5

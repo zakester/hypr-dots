@@ -11,7 +11,6 @@ alias rwifi="wifi-on | wifi-off"
 #alias dsearch="dnf search"
 alias xmp="~/run.sh"
 alias start-wallpaper="~/.config/hypr/start_wallpaper.sh"
-alias random-wallpaper="swww img $(find ~/.wallpaper/ -type f | shuf --random-source=/dev/urandom -n 1)"
 alias update="sudo dnf update -y"
 alias n='nvim'
 alias vim='nvim'
