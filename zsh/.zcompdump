@@ -1,4 +1,4 @@
-#files: 968	version: 5.9
+#files: 969	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -1667,6 +1667,7 @@ _comps=(
 'ypwhich' '_yp'
 'ypxfr' '_yp'
 'ytalk' '_other_accounts'
+'zap' '_zap'
 'zargs' '_zargs'
 'zathura' '_zathura'
 'zcalc' '_zcalc'
@@ -2032,7 +2033,7 @@ autoload -Uz _afew _android _archlinux-java _artisan _atach \
             _widgets _zargs _zattr _zcalc _zcalc_line \
             _zcompile _zed _zftp _zle _zmodload \
             _zmv _zparseopts _zpty _zsh-mime-handler _zsocket \
-            _zstyle _ztodo
+            _zstyle _ztodo _zap
 autoload -Uz +X _call_program
 
 typeset -gUa _comp_assocs

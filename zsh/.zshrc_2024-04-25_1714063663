@@ -1,13 +1,15 @@
-# Created by Zap installer
-[ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
-plug "zsh-users/zsh-autosuggestions"
-plug "zap-zsh/supercharge"
-plug "zap-zsh/zap-prompt"
-plug "zsh-users/zsh-syntax-highlighting"
-
-# Load and initialise completion system
-autoload -Uz compinit
+# Configure pormpt
+autoload -Uz compinit promptinit
 compinit
+promptinit
+
+# This will set the default prompt to the walters theme
+prompt walters
+
+# Configure Autocompletion
+#autoload -Uz compinit
+#compinit
+#zstyle ':copmletion:*' menu select
 
 # Neovim as default editor.
 export EDITOR="nvim"
