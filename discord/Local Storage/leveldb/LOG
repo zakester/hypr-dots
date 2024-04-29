@@ -1,9 +1,0 @@
-2024/04/28-17:19:34.845 79a4 Reusing MANIFEST /home/arch/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2024/04/28-17:19:34.855 79a4 Recovering log #4
-2024/04/28-17:19:34.856 79a4 Reusing old log /home/arch/.config/discord/Local Storage/leveldb/000004.log 
-2024/04/28-17:23:48.982 79a4 Level-0 table #8: started
-2024/04/28-17:23:49.018 79a4 Level-0 table #8: 3061071 bytes OK
-2024/04/28-17:23:49.028 79a4 Delete type=0 #4
-2024/04/28-21:42:46.331 79a4 Level-0 table #10: started
-2024/04/28-21:42:46.359 79a4 Level-0 table #10: 2298663 bytes OK
-2024/04/28-21:42:46.369 79a4 Delete type=0 #7
