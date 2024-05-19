@@ -1,0 +1,6 @@
+2024/05/19-18:28:12.677 a339 Reusing MANIFEST /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/19-18:28:12.677 a339 Recovering log #181
+2024/05/19-18:28:12.731 a339 Reusing old log /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000181.log 
+2024/05/19-18:28:17.583 a33b Level-0 table #186: started
+2024/05/19-18:28:17.647 a33b Level-0 table #186: 3812740 bytes OK
+2024/05/19-18:28:17.657 a33b Delete type=0 #181

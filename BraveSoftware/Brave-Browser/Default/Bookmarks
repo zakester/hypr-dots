@@ -1,0 +1,117 @@
+{
+   "checksum": "405c0735175e01fca9cbc987c48f81b0",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13359315453008886",
+               "date_last_used": "0",
+               "guid": "a18a9aee-e563-45ec-8dfb-5656924c47f5",
+               "id": "6",
+               "name": "file upload vulnerability poc - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/results?search_query=file+upload+vulnerability+poc"
+            }, {
+               "date_added": "13359315453008940",
+               "date_last_used": "0",
+               "guid": "424182d8-8ea1-4b3f-94e7-2eca6ed6de49",
+               "id": "7",
+               "name": "BUG BOUNTY: FILE UPLOAD VULNERABILITIES VIA PDF FILES | 2023 - YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/watch?v=IJn6_PmXm7E"
+            }, {
+               "date_added": "13359315453008971",
+               "date_last_used": "0",
+               "guid": "98100285-f4ef-473d-96bf-525b3fcb6955",
+               "id": "8",
+               "name": "HackTricks | HackTricks | HackTricks",
+               "type": "url",
+               "url": "https://book.hacktricks.xyz/"
+            }, {
+               "date_added": "13359315453008991",
+               "date_last_used": "0",
+               "guid": "b09b93e8-5285-4f52-b725-264757920e4c",
+               "id": "9",
+               "name": "Web Vulnerabilities Methodology | HackTricks | HackTricks",
+               "type": "url",
+               "url": "https://book.hacktricks.xyz/pentesting-web/web-vulnerabilities-methodology"
+            }, {
+               "date_added": "13359315453009061",
+               "date_last_used": "0",
+               "guid": "7c26a325-997c-494e-b272-471824185ff3",
+               "id": "10",
+               "name": "File Upload | HackTricks | HackTricks",
+               "type": "url",
+               "url": "https://book.hacktricks.xyz/pentesting-web/file-upload"
+            }, {
+               "date_added": "13359315453009087",
+               "date_last_used": "0",
+               "guid": "13203d6f-276c-4ae4-9e8a-4d180a451b73",
+               "id": "11",
+               "name": "Opportunity Discovery | HackerOne",
+               "type": "url",
+               "url": "https://hackerone.com/opportunities/all/search?tech=PHP&ordering=Newest+programs"
+            }, {
+               "date_added": "13359315453009115",
+               "date_last_used": "0",
+               "guid": "4d50d3f0-3304-47bb-bbdb-7d71ca7155eb",
+               "id": "12",
+               "name": "Kiwi.com | Bug Bounty Program Policy | HackerOne",
+               "type": "url",
+               "url": "https://hackerone.com/kiwicom?type=team"
+            }, {
+               "date_added": "13359315453009139",
+               "date_last_used": "0",
+               "guid": "6f957770-06d4-46c2-943e-eeca44ccb250",
+               "id": "13",
+               "name": "Kiwi.com | Find Cheap Flights & Discover New Destinations",
+               "type": "url",
+               "url": "https://www.kiwi.com/en/"
+            }, {
+               "date_added": "13359315453009162",
+               "date_last_used": "0",
+               "guid": "fe21f34a-6e62-4dd1-b79c-81c0164f44b0",
+               "id": "14",
+               "name": "ChatGPT",
+               "type": "url",
+               "url": "https://chatgpt.com/"
+            } ],
+            "date_added": "13359315453008258",
+            "date_last_used": "0",
+            "date_modified": "13359315453009162",
+            "guid": "c690127b-64ba-4269-b7fc-f828db436702",
+            "id": "5",
+            "name": "New folder",
+            "type": "folder"
+         } ],
+         "date_added": "13359283455964269",
+         "date_last_used": "0",
+         "date_modified": "13359315453009217",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13359283455964272",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13359283455964275",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

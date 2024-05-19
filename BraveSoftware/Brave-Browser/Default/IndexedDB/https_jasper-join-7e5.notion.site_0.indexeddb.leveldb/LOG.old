@@ -1,0 +1,17 @@
+2024/05/14-06:49:11.366 47f Reusing MANIFEST /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_jasper-join-7e5.notion.site_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/14-06:49:11.367 47f Recovering log #4
+2024/05/14-06:49:11.367 47f Reusing old log /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_jasper-join-7e5.notion.site_0.indexeddb.leveldb/000004.log 
+2024/05/14-06:49:13.340 48a Level-0 table #8: started
+2024/05/14-06:49:13.350 48a Level-0 table #8: 2563 bytes OK
+2024/05/14-06:49:13.365 48a Delete type=0 #4
+2024/05/14-06:49:13.365 47e Manual compaction at level-0 from '\x00\x03\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x04\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/05/14-06:56:29.301 489 Level-0 table #10: started
+2024/05/14-06:56:29.309 489 Level-0 table #10: 587 bytes OK
+2024/05/14-06:56:29.319 489 Delete type=0 #7
+2024/05/14-06:56:29.320 47e Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at '\x00\x04\x00\x00\x05' @ 220 : 1
+2024/05/14-06:56:29.320 47e Compacting 1@0 + 1@1 files
+2024/05/14-06:56:29.328 47e Generated table #11@0: 118 keys, 1614 bytes
+2024/05/14-06:56:29.328 47e Compacted 1@0 + 1@1 files => 1614 bytes
+2024/05/14-06:56:29.340 47e compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/05/14-06:56:29.341 47e Delete type=2 #10
+2024/05/14-06:56:29.344 47e Manual compaction at level-0 from '\x00\x04\x00\x00\x05' @ 220 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

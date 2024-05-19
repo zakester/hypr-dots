@@ -1,0 +1,9 @@
+2024/05/19-08:01:50.823 41f1 Reusing MANIFEST /home/arch/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/19-08:01:50.823 41f1 Recovering log #7
+2024/05/19-08:01:50.831 41f1 Reusing old log /home/arch/.config/obsidian/IndexedDB/app_obsidian.md_0.indexeddb.leveldb/000007.log 
+2024/05/19-08:03:32.030 4193 Compacting 1@1 + 1@2 files
+2024/05/19-08:03:32.092 4193 Generated table #10@1: 592 keys, 92021 bytes
+2024/05/19-08:03:32.092 4193 Compacted 1@1 + 1@2 files => 92021 bytes
+2024/05/19-08:03:32.106 4193 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/05/19-08:03:32.106 4193 Delete type=2 #5
+2024/05/19-08:03:32.106 4193 Delete type=2 #8

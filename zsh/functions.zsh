@@ -1,3 +1,14 @@
+# Bug bounty function
+httpsub() {
+  subfinder -d "$@" | httpx | tee
+}
+
+url() {
+  domain=$(basename $(pwd))
+  (waybackurls "$domain" > wayback.txt) & (gau "$domain" > gau.txt)
+  cat wayback.txt gau.txt | sort | uniq > urls.txt
+}
+
 # Functions
 take() {
 	mkdir "$@" && cd "$@"

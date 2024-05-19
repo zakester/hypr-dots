@@ -1,0 +1,13 @@
+Base64
+GraphQL
+HackerOne
+IDOR
+OAuth
+UUID
+UUIDs
+WayBackMachine
+XSS
+datph4m
+naaash
+svg
+checksum_v1 = 63ef96c94fe4cd2041b10cec868df42f
