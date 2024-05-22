@@ -1,3 +1,7 @@
-2024/05/17-16:00:29.757 483 Reusing MANIFEST /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/05/17-16:00:29.757 483 Recovering log #3
-2024/05/17-16:00:29.758 483 Reusing old log /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000003.log 
+2024/05/20-21:06:43.277 c752 Reusing MANIFEST /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/20-21:06:43.277 c752 Recovering log #3
+2024/05/20-21:06:43.278 c752 Reusing old log /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.reddit.com_0.indexeddb.leveldb/000003.log 
+2024/05/20-21:07:15.297 c753 Level-0 table #5: started
+2024/05/20-21:07:15.308 c753 Level-0 table #5: 1954 bytes OK
+2024/05/20-21:07:15.319 c753 Delete type=0 #3
+2024/05/20-21:07:15.321 c753 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

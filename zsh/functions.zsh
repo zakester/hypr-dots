@@ -9,6 +9,13 @@ url() {
   cat wayback.txt gau.txt | sort | uniq > urls.txt
 }
 
+# Android Bug bounty.
+reverse() {
+  echo "[Running] apktool, dex2jar";
+  (apktool d app.apk -o apktool/) & (dex2jar app.apk)
+  echo "Done";
+}
+
 # Functions
 take() {
 	mkdir "$@" && cd "$@"

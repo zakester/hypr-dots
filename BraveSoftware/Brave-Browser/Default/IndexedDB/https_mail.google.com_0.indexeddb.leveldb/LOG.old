@@ -1,3 +1,6 @@
-2024/05/18-09:10:59.847 1760 Reusing MANIFEST /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2024/05/18-09:10:59.848 1760 Recovering log #14
-2024/05/18-09:10:59.848 1760 Reusing old log /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000014.log 
+2024/05/20-21:17:46.332 c752 Reusing MANIFEST /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/05/20-21:17:46.332 c752 Recovering log #14
+2024/05/20-21:17:46.344 c752 Reusing old log /home/arch/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000014.log 
+2024/05/20-21:18:22.818 c753 Level-0 table #19: started
+2024/05/20-21:18:22.853 c753 Level-0 table #19: 2711265 bytes OK
+2024/05/20-21:18:22.863 c753 Delete type=0 #14
